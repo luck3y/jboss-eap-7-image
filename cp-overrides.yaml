@@ -1,15 +1,18 @@
 schema_version: 1
 
+# cp-overrides.yaml
+# see dev-overrides.yaml for more information
+
+labels:
+    - name: "PRODUCT_VERSION"
+      value: "13.0-SP01"
+
 modules:
       repositories:
           - name: jboss-eap-modules
             git:
                   url: https://github.com/jboss-container-images/jboss-eap-modules.git
                   ref: sprint-20
-
-labels:
-    - name: "PRODUCT_VERSION"
-      value: "13.0-SP01"
 
 artifacts:
     - name: jboss-eap-cd.zip
@@ -19,5 +22,5 @@ artifacts:
 osbs:
       repository:
             name: containers/jboss-eap-7
-            branch: jb-eap-7.2-cd-cp-rhel-7
+            branch: jb-eap-7.3-cd-cp-rhel-8
 
