@@ -13,8 +13,6 @@ envs:
       value: "7.2.3.GA"
     - name: "PRODUCT_VERSION"
       value: "7.2.3.GA"
-    - name: "org.wildfly.patching.jar.invalidation"
-      value: "true"
 artifacts:
     - path: jboss-eap-7.2.3-patch.zip
       md5: 7aa7c5a52facbe591b7e63194ee52006
